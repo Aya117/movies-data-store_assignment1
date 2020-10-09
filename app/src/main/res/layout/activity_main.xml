@@ -91,6 +91,7 @@
         android:textColor="#090909"
         android:textSize="12pt" />
 
+
     <androidx.appcompat.widget.AppCompatSpinner
         android:id="@+id/spinner2"
         android:layout_width="wrap_content"
@@ -140,5 +141,6 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="#0C0C0C"
         android:textSize="8pt" />
+
 
 </androidx.appcompat.widget.LinearLayoutCompat>

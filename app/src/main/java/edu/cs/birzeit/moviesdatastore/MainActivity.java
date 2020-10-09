@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
@@ -17,6 +18,7 @@ import edu.cs.birzeit.moviesdatastore.model.IMoviesDA;
 import edu.cs.birzeit.moviesdatastore.model.MoviesFactor;
 
 public class MainActivity extends AppCompatActivity {
+    private Spinner spin;
     private Spinner spinner;
     private Spinner spinner1;
     private Spinner spinner2;
@@ -33,6 +35,8 @@ public class MainActivity extends AppCompatActivity {
         txtshowMessage=findViewById(R.id.txtshowMessage);
         txtshowMessage1=findViewById(R.id.txtshowMessage1);
         txtshowMessage2=findViewById(R.id.txtshowMessage2);
+
+
         populateSpinner();
     }
 
@@ -69,6 +73,8 @@ public class MainActivity extends AppCompatActivity {
             for (movies M : movie)
                 str += "Title==>" + M.getTitle() + ", Year==>:" + M.getYear() + "\n";
             txtshowMessage.setText(str);
+
+
 
         }
         public void btncomOnClick(View view) {
