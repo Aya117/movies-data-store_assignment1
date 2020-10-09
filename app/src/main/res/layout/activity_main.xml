@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:orientation="vertical"
+    android:scrollbarTrackVertical="@null"
+    android:background="@drawable/aya"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/hello_to_movies_data_store"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#7A1212"
+        android:textSize="10pt" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="*search by genre:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#0E0D0D"
+        android:textSize="12pt" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:dropDownWidth="match_parent"
+        android:foreground="@android:drawable/btn_dropdown" />
+
+    <Button
+        android:id="@+id/btnSearchgen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:background="#AE8383"
+        android:drawableLeft="@android:drawable/checkbox_on_background"
+        android:onClick="btngenOnClick"
+        android:text="search"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="* search by Year:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#121111"
+        android:textSize="12pt" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:dropDownWidth="match_parent"
+        android:foreground="@android:drawable/btn_dropdown" />
+
+    <Button
+        android:id="@+id/btnSearchcom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:background="#AE8383"
+        android:drawableLeft="@android:drawable/checkbox_on_background"
+        android:onClick="btncomOnClick"
+        android:text="search"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="* search by Title:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#090909"
+        android:textSize="12pt" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinner2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:dropDownWidth="wrap_content"
+        android:foreground="@android:drawable/btn_dropdown" />
+
+    <Button
+        android:id="@+id/btnSearchtit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:background="#AE8383"
+        android:drawableLeft="@android:drawable/checkbox_on_background"
+        android:onClick="btntitOnClick"
+        android:text="search"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/txtshowMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#090909"
+        android:textSize="8pt" />
+
+    <TextView
+        android:id="@+id/txtshowMessage1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#090909"
+        android:textSize="8pt" />
+
+    <TextView
+        android:id="@+id/txtshowMessage2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:fontFamily="sans-serif-black"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#0C0C0C"
+        android:textSize="8pt" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>
